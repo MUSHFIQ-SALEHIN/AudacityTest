@@ -37,7 +37,7 @@ class HomeApiProvider extends BaseApiProvider {
       //Response response = await getDio().get(_SELLERS);
       var file = await DefaultCacheManager().getSingleFile(
           'https://bd.ezassist.me/ws/mpFeed?instanceName=bd.ezassist.me&opt=$_TRENDING_SELLERS');
-      final String response = await rootBundle.loadString(file.path);
+      final String response = await file.readAsString();
       var data = await json.decode(response);
       List<dynamic> list1 = data.elementAt(0);
       return list1;
@@ -52,7 +52,7 @@ class HomeApiProvider extends BaseApiProvider {
       //Response response = await getDio().get(_PRODUCTS);
       var file = await DefaultCacheManager().getSingleFile(
           'https://bd.ezassist.me/ws/mpFeed?instanceName=bd.ezassist.me&opt=$_TRENDING_PRODUCTS');
-      final String response = await rootBundle.loadString(file.path);
+      final String response = await file.readAsString();
       var data = await json.decode(response);
       List<dynamic> list1 = data.elementAt(0);
       return list1;
@@ -67,7 +67,7 @@ class HomeApiProvider extends BaseApiProvider {
       //Response response = await getDio().get(_ARRIVALS);
       var file = await DefaultCacheManager().getSingleFile(
           'https://bd.ezassist.me/ws/mpFeed?instanceName=bd.ezassist.me&opt=$_ARRIVALS');
-      final String response = await rootBundle.loadString(file.path);
+      final String response = await file.readAsString();
       var data = await json.decode(response);
       List<dynamic> list1 = data.elementAt(0);
       return list1;
@@ -82,7 +82,7 @@ class HomeApiProvider extends BaseApiProvider {
       //Response response = await getDio().get(_SHOPS);
       var file = await DefaultCacheManager().getSingleFile(
           'https://bd.ezassist.me/ws/mpFeed?instanceName=bd.ezassist.me&opt=$_SHOPS');
-      final String response = await rootBundle.loadString(file.path);
+      final String response = await file.readAsString();
       var data = await json.decode(response);
       List<dynamic> list1 = data.elementAt(0);
       return list1;
@@ -97,7 +97,7 @@ class HomeApiProvider extends BaseApiProvider {
       //Response response = await getDio().get(_SHOPS);
       var file = await DefaultCacheManager().getSingleFile(
           'https://bd.ezassist.me/ws/mpFeed?instanceName=bd.ezassist.me&opt=$_PRODUCTS');
-      final String response = await rootBundle.loadString(file.path);
+      final String response = await file.readAsString();
       var data = await json.decode(response);
       List<dynamic> list1 = data.elementAt(0);
       return list1;
