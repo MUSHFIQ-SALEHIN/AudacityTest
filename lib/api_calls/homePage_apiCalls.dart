@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:audacity_test/network/base_api_provider.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 
 class HomeApiProvider extends BaseApiProvider {

@@ -149,9 +149,9 @@ class _HomePageState extends State<HomePage> {
           );
         } else if (snapshot.hasError) {
           debugPrint(snapshot.error);
-          return Container();
+          return Center(child: CircularProgressIndicator());
         } else
-          return Container();
+          return Center(child: CircularProgressIndicator());
       },
     );
   }
@@ -191,9 +191,9 @@ class _HomePageState extends State<HomePage> {
           );
         } else if (snapshot.hasError) {
           debugPrint(snapshot.error);
-          return Container();
+          return Center(child: CircularProgressIndicator());
         } else
-          return Container();
+          return Center(child: CircularProgressIndicator());
       },
     );
   }
@@ -236,9 +236,9 @@ class _HomePageState extends State<HomePage> {
           );
         } else if (snapshot.hasError) {
           debugPrint(snapshot.error);
-          return Container();
+          return Center(child: CircularProgressIndicator());
         } else
-          return Container();
+          return Center(child: CircularProgressIndicator());
       },
     );
   }
@@ -279,9 +279,9 @@ class _HomePageState extends State<HomePage> {
           );
         } else if (snapshot.hasError) {
           debugPrint(snapshot.error);
-          return Container();
+          return Center(child: CircularProgressIndicator());
         } else
-          return Container();
+          return Center(child: CircularProgressIndicator());
       },
     );
   }
@@ -340,9 +340,9 @@ class _HomePageState extends State<HomePage> {
           );
         } else if (snapshot.hasError) {
           debugPrint(snapshot.error);
-          return Container();
+          return Center(child: CircularProgressIndicator());
         } else
-          return Container();
+          return Center(child: CircularProgressIndicator());
       },
     );
   }
@@ -396,22 +396,10 @@ class _HomePageState extends State<HomePage> {
               padding: new EdgeInsets.symmetric(vertical: 2));
         } else if (snapshot.hasError) {
           debugPrint(snapshot.error);
-          return Container();
+          return Center(child: CircularProgressIndicator());
         } else
-          return Container();
+          return Center(child: CircularProgressIndicator());
       },
     );
-  }
-}
-
-class ProductListView extends StatefulWidget {
-  @override
-  _ProductListViewState createState() => _ProductListViewState();
-}
-
-class _ProductListViewState extends State<ProductListView> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
