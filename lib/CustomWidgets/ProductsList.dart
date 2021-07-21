@@ -56,8 +56,8 @@ class _ProductsListItemState extends State<ProductsListItem> {
                     SizedBox(
                       height: 5,
                     ),
-                    Text(widget.time,style:
-                          TextStyle(fontSize: 12,color: Colors.grey)),
+                    Text(widget.time,
+                        style: TextStyle(fontSize: 12, color: Colors.grey)),
                   ],
                 )
               ],
@@ -65,7 +65,10 @@ class _ProductsListItemState extends State<ProductsListItem> {
             SizedBox(
               height: 20,
             ),
-            Text(widget.description,style: TextStyle(fontSize: 13),),
+            Text(
+              widget.description,
+              style: TextStyle(fontSize: 13),
+            ),
             SizedBox(
               height: 10,
             ),
@@ -84,29 +87,46 @@ class _ProductsListItemState extends State<ProductsListItem> {
               children: [
                 Row(
                   children: [
-                    Icon(Icons.wallet_giftcard,size: 20,),
+                    Icon(
+                      Icons.wallet_giftcard,
+                      size: 20,
+                    ),
                     SizedBox(
                       width: 5,
                     ),
-                    Text("BDT " + widget.price,style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold),)
+                    Text(
+                      "BDT " + widget.price,
+                      style:
+                          TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+                    )
                   ],
                 ),
                 Row(
                   children: [
-                    Icon(Icons.menu,size: 20,),
+                    Icon(
+                      Icons.menu,
+                      size: 20,
+                    ),
                     SizedBox(
                       width: 5,
                     ),
-                    Text(widget.stock + " Avaiable stock",style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold))
+                    Text(widget.stock + " Avaiable stock",
+                        style: TextStyle(
+                            fontSize: 10, fontWeight: FontWeight.bold))
                   ],
                 ),
                 Row(
                   children: [
-                    Icon(Icons.shopping_cart_outlined,size: 20,),
+                    Icon(
+                      Icons.shopping_cart_outlined,
+                      size: 20,
+                    ),
                     SizedBox(
                       width: 5,
                     ),
-                    Text(widget.orderItems + " Order(s)",style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold))
+                    Text(widget.orderItems + " Order(s)",
+                        style: TextStyle(
+                            fontSize: 10, fontWeight: FontWeight.bold))
                   ],
                 )
               ],
