@@ -1,4 +1,0 @@
-#Wed Jul 21 04:25:25 BDT 2021
-base.0=/Users/mushfiqchowdhury/Projects/Flutter_projects/AudacityTest/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex

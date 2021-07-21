@@ -39,7 +39,7 @@ class _ProductsListItemState extends State<ProductsListItem> {
             Row(
               children: [
                 CircleAvatar(
-                  radius: 15,
+                  radius: 18,
                   backgroundImage: CachedNetworkImageProvider(widget.imageUrl),
                 ),
                 SizedBox(
@@ -51,7 +51,7 @@ class _ProductsListItemState extends State<ProductsListItem> {
                     Text(
                       (widget.title),
                       style:
-                          TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
                       height: 5,
@@ -65,7 +65,7 @@ class _ProductsListItemState extends State<ProductsListItem> {
             SizedBox(
               height: 20,
             ),
-            Text(widget.description,style: TextStyle(fontSize: 12),),
+            Text(widget.description,style: TextStyle(fontSize: 13),),
             SizedBox(
               height: 10,
             ),

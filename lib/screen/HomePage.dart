@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
                       "Trending Sellers",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),
                     ),
                   ),
                   Padding(
@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
                       "Trending Products",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),
                     ),
                   ),
                   Padding(
@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
                       "New Arrivals",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),
                     ),
                   ),
                   Padding(
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Text(
                       "New Shops",
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),
                     ),
                   ),
                   Padding(
@@ -215,9 +215,7 @@ class _HomePageState extends State<HomePage> {
                     mainAxisSpacing: 0,
                   ),
                   scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) => Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: NewArrivalGrid(
+                  itemBuilder: (context, index) => NewArrivalGrid(
                           profileUrl:
                               NewArrivals.fromJson(arrivalList.elementAt(index))
                                   .productImage,
@@ -229,7 +227,6 @@ class _HomePageState extends State<HomePage> {
                               NewArrivals.fromJson(arrivalList.elementAt(index))
                                   .productName,
                         ),
-                      ),
                   itemCount: arrivalList.length,
                   padding: new EdgeInsets.symmetric(vertical: 2)),
             ),
